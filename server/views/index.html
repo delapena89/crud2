@@ -1,0 +1,55 @@
+{% extends 'layout.html' %}
+
+{% block title %}{% endblock %}
+
+
+{% block content %}
+
+  <div class="container">
+
+    <form>
+      <h1>Add Superhero</h1>
+        <div class="form-group">
+          <input type="text" class="form-control" id="name" placeholder="name" required>
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" id="ability" placeholder="ability" required>
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" id="nemesis" placeholder="nemesis" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+      <div id="animal-table">
+
+        <h2>All Animals</h2>
+
+        <div>
+          <table class="table">
+            <thead>
+            <tr>
+              <th>Name</th>
+              <th>Ability</th>
+              <th>Nemesis</th>
+            </tr>
+          </thead>
+          <tbody id="all">
+          </tbody>
+        </table>
+        </div>
+
+      </div>
+
+      <form id="edit-form">
+        <h2>Edit Animal</h2>
+        <div class="form-group">
+          <input type="text" class="form-control" id="edit-friendly">
+        </div>
+        <button type="submit" class="btn btn-success id="update-button">Update</button>
+        <button class="btn btn-danger" id="cancel-edit">Cancel</button>
+      </form>
+
+  </div>
+
+{% endblock %}
