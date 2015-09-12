@@ -12,4 +12,4 @@ process.env.BD_HOST = 'mongodb://localhost/superheros';
 
 mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost/superheros');
 
-module.export = mongoose.model('superheros', Superhero);
+module.exports = mongoose.model('superheros', Superhero);
