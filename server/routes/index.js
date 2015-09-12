@@ -70,7 +70,7 @@ router.put('/superhero/:id', function(req, res, next) {
   });
 });
 
-// delete single animal
+// delete single superhero
 router.delete('/superhero/:id',function(req, res, next){
   Superhero.findByIdAndRemove(req.params.id, function(err,data){
     if (err) {
